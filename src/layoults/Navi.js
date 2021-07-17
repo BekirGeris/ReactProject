@@ -6,7 +6,7 @@ export default function Navi() {
     return (
         <div>
         <Menu inverted fixed>
-            <Container>
+            <Container> 
             <Menu.Item
           name='home'
           
