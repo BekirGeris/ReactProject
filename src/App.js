@@ -6,13 +6,12 @@ import { Container } from 'semantic-ui-react';
 import Navi from './layoults/Navi';
 
 function App() {
-  return (
+    return (
     <div className="App">
       <Navi />
       <Container className="main">
-        <Dashboard />
+        <Dashboard/>
       </Container>
-
     </div>
   );
 }
