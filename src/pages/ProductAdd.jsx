@@ -1,13 +1,14 @@
 import React from 'react'
-import { Formik, Form, Field } from 'formik'
+import { Formik, Form, Field, ErrorMessage } from 'formik'
 import * as Yup from "yup"
-import { Button, FormField } from 'semantic-ui-react'
+import { Button, FormField, Label } from 'semantic-ui-react'
+import BGRSTextInput from '../utilities/customFormControls/BGRSTextInput'
 
 export default function productAdd() {
 
     const initialValues = {
         productName: "",
-        unitPrice: 10
+        unitPrice: ""
     }
 
     const validationSchema = Yup.object({
@@ -25,13 +26,9 @@ export default function productAdd() {
                 }}
             >
                 <Form className="ui form">
-                    <FormField>
-                        <Field name="productName" placeholder="Ürün Adı"></Field>
-                    </FormField>
-                    <FormField>
-                    <Field name="unitPrice" placeholder="Ürün Fiyatı"></Field>
-                    </FormField>
-                    <Button colo9r="green" type="submit">Ekle</Button>
+                    <BGRSTextInput name="productName" placeholder="Ürün Adı"/>
+                    <BGRSTextInput name="unitPrice" placeholder="Ürün Adı"/>
+                    <Button color="yellow" type="submit">Ekle</Button>
                 </Form>
             </Formik>
         </div>
