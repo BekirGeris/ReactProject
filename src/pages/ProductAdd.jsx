@@ -27,7 +27,7 @@ export default function productAdd() {
             >
                 <Form className="ui form">
                     <BGRSTextInput name="productName" placeholder="Ürün Adı"/>
-                    <BGRSTextInput name="unitPrice" placeholder="Ürün Adı"/>
+                    <BGRSTextInput name="unitPrice" placeholder="Ürün Fiyatı"/>
                     <Button color="yellow" type="submit">Ekle</Button>
                 </Form>
             </Formik>
